@@ -26,7 +26,6 @@ import Changelog from 'components/canny-changelog'
 import { GithubIcon } from 'components/icons'
 import siteConfig from 'configs/site-config'
 
-
 function HeaderContent() {
   const mobileNav = useDisclosure()
 
@@ -48,8 +47,7 @@ function HeaderContent() {
           <NextLink href='/' passHref>
             <chakra.a display='block' aria-label='Sivu, Back to homepage'>
               <Logo />
-              <Box minW='3rem' display={{ base: 'block', md: 'none' }}>
-              </Box>
+              <Box minW='3rem' display={{ base: 'block', md: 'none' }}></Box>
             </chakra.a>
           </NextLink>
         </Flex>
@@ -77,7 +75,7 @@ function HeaderContent() {
                 _hover={{ color: 'gray.600' }}
               />
             </Link>
-          <Changelog />
+            <Changelog />
           </HStack>
           <IconButton
             size='md'
